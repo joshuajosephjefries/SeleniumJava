@@ -11,5 +11,6 @@ public class Demo1 {
 		driver.manage().window().maximize();
 		driver.findElement(By.id("APjFqb")).sendKeys("Joseph Jefries");
 		driver.findElement(By.id("APjFqb")).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div[1]/div/div/a/h3")).click();
 	}
 }
