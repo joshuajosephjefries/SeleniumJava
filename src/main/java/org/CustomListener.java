@@ -12,18 +12,23 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import org.testng.ITestListener;
-import org.testng.ITestContext;
-import org.testng.ITestResult;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class CustomListener implements ITestListener {
+import org.testng.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+public class CustomListener implements ITestListener, ISuiteListener {
     private static ExtentReports extent;
     private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     private WebDriver driver;
+    private static ExtentTest beforeAfterTestLog;
     private String reportPath;
+    private static final Logger logger = LoggerFactory.getLogger(CustomListener.class);
 
     @Override
-    public void onStart(ITestContext context) {
+    public void onStart(ISuite suite) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         reportPath = "test-output/ExtentReport_" + timestamp + ".html";
 
@@ -37,6 +42,8 @@ public class CustomListener implements ITestListener {
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("OS", System.getProperty("os.name"));
         extent.setSystemInfo("Tester", "QA Automation Engineer");
+
+        beforeAfterTestLog = extent.createTest("BeforeTest & AfterTest Logs");
     }
 
     @Override
@@ -74,6 +81,15 @@ public class CustomListener implements ITestListener {
         openReport(reportPath);
     }
 
+    @BeforeTest
+    public void beforeTestLog() {
+        beforeAfterTestLog.info("🚀 @BeforeTest executed before test methods.");
+    }
+
+    @AfterTest
+    public void afterTestLog() {
+        beforeAfterTestLog.info("🛑 @AfterTest executed after test methods.");
+    }
     private String captureScreenshot(String testName) {
         try {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -91,7 +107,7 @@ public class CustomListener implements ITestListener {
             Desktop.getDesktop().browse(new File(filePath).toURI());
             System.out.println("🌐 Report opened in browser: " + filePath);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("❌ Exception occurred: ", e);
         }
     }
 }

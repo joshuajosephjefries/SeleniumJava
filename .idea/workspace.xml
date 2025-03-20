@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added annotations and made modification to listener">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport_20250319_182507.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport_20250320_105300.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport_20250320_110534.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111137.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111538.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport_20250320_112120.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/CustomListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/CustomListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TestAnnotation1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TestAnnotation1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TestAnnotation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TestAnnotation2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/CustomListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/CustomListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/TestAnnotation1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/TestAnnotation1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/TestAnnotation2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/TestAnnotation2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "joshuajosephjefries"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/joshuajosephjefries/SeleniumJava.git",
+    "accountId": "70f801a4-48f1-4163-bf30-c4b9a865b81b"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2uXJAACAk4sjuBb1ZMHYkwDuhBI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyTestProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="" />
+      <created>1742388842721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742388842721</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added annotations and made modification to listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added annotations and made modification to listener" />
+  </component>
+</project>
