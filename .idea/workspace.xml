@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added annotations and made modification to listener">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added CustomListener.java to Listener Package">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CustomListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Annotations/CustomListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TestAnnotation1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Annotations/TestAnnotation1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TestAnnotation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Annotations/TestAnnotation2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngAnnotations.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,6 +52,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor": "Run",
+    "TestNG.GoogleSearch.executor": "Run",
+    "TestNG.GoogleSearch.reCAPTCHA.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.preview.features.used": "true",
     "ignore.virus.scanning.warn.message": "true",
@@ -59,7 +63,7 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml">
+  <component name="RunManager" selected="TestNG.GoogleSearch">
     <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyTestProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testngAnnotations.xml" />
@@ -80,8 +84,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GoogleSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyTestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Google" />
+      <option name="MAIN_CLASS_NAME" value="Google.GoogleSearch" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoogleSearch" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml" />
       </list>
@@ -96,6 +118,15 @@
       <option name="presentableId" value="Default" />
       <updated>1742388842721</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added CustomListener.java to Listener Package">
+      <option name="closed" value="true" />
+      <created>1742748839448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742748839448</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added annotations and made modification to listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added annotations and made modification to listener" />
+    <MESSAGE value="Added CustomListener.java to Listener Package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CustomListener.java to Listener Package" />
   </component>
 </project>
