@@ -1,113 +1,133 @@
 package Listener;
 
-import com.aventstack.extentreports.*;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import java.awt.*;
+import org.testng.*;
+
+import com.aventstack.extentreports.*;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import org.testng.*;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-
-public class CustomListener implements ITestListener, ISuiteListener {
+public class CustomListener implements ITestListener {
     private static ExtentReports extent;
-    private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>();
-    private WebDriver driver;
-    private static ExtentTest beforeAfterTestLog;
-    private String reportPath;
-    private static final Logger logger = LoggerFactory.getLogger(CustomListener.class);
+    private static ExtentTest test;
+    private static WebDriver driver;
+    private static String reportPath;
+    private static String screenshotDir;
 
     @Override
-    public void onStart(ISuite suite) {
+    public void onStart(ITestContext context) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        reportPath = "test-output/ExtentReport_" + timestamp + ".html";
+        reportPath = System.getProperty("user.dir") + "/test-output/ExtentReport_" + timestamp + ".html";
+        screenshotDir = System.getProperty("user.dir") + "/screenshots/" + timestamp + "/";
 
         ExtentSparkReporter htmlReporter = new ExtentSparkReporter(reportPath);
-        htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setDocumentTitle("Automation Report");
-        htmlReporter.config().setReportName("Advanced Test Execution Report");
-        htmlReporter.config().setEncoding("utf-8");
+        htmlReporter.config().setTheme(Theme.DARK);
+        htmlReporter.config().setDocumentTitle("Advanced Test Report");
+        htmlReporter.config().setReportName("Automation Test Results");
 
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
-        extent.setSystemInfo("OS", System.getProperty("os.name"));
-        extent.setSystemInfo("Tester", "QA Automation Engineer");
-
-        beforeAfterTestLog = extent.createTest("BeforeTest & AfterTest Logs");
+        System.out.println("📌 Extent Report Created: " + reportPath);
     }
 
     @Override
     public void onTestStart(ITestResult result) {
-        ExtentTest extentTest = extent.createTest(result.getName());
-        test.set(extentTest);
-        test.get().info("🔹 Test Started: " + result.getName());
+        test = extent.createTest("🚀 Test Started: " + result.getMethod().getMethodName());
+        test.log(Status.INFO, "🟢 Test Execution Started");
+        System.out.println("✅ Test Started: " + result.getMethod().getMethodName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        test.get().pass("✅ Test Passed");
-        test.get().info("Execution Time: " + (result.getEndMillis() - result.getStartMillis()) + " ms");
+        test.log(Status.PASS, "✅ Test Passed Successfully");
+        attachScreenshot("PASS");
+        System.out.println("✔ Test Passed: " + result.getMethod().getMethodName());
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        test.get().fail("❌ Test Failed");
-        test.get().fail(result.getThrowable());
-
-        String screenshotPath = captureScreenshot(result.getName());
-        if (screenshotPath != null) {
-            test.get().addScreenCaptureFromPath(screenshotPath);
-        }
+        test.log(Status.FAIL, "❌ Test Failed: " + result.getThrowable());
+        attachScreenshot("FAIL");
+        System.out.println("❌ Test Failed: " + result.getMethod().getMethodName());
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        test.get().skip("⚠️ Test Skipped");
+        test.log(Status.SKIP, "⚠️ Test Skipped");
+        System.out.println("⚠️ Test Skipped: " + result.getMethod().getMethodName());
     }
 
     @Override
     public void onFinish(ITestContext context) {
         extent.flush();
-        openReport(reportPath);
+        System.out.println("📄 Extent Report Generated: " + reportPath);
+        openReport();
     }
 
-    @BeforeTest
-    public void beforeTestLog() {
-        beforeAfterTestLog.info("🚀 @BeforeTest executed before test methods.");
-    }
+    private static void attachScreenshot(String stepName) {
+        if (driver != null) {
+            try {
+                // 🛠 Ensure the screenshot directory exists
+                File screenshotFolder = new File(screenshotDir);
+                if (!screenshotFolder.exists()) {
+                    screenshotFolder.mkdirs();
+                }
 
-    @AfterTest
-    public void afterTestLog() {
-        beforeAfterTestLog.info("🛑 @AfterTest executed after test methods.");
-    }
-    private String captureScreenshot(String testName) {
-        try {
-            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            String screenshotPath = "test-output/screenshots/" + testName + ".png";
-            FileUtils.copyFile(screenshot, new File(screenshotPath));
-            return screenshotPath;
-        } catch (Exception e) {
-            System.out.println("⚠ Screenshot failed: " + e.getMessage());
-            return null;
+                // 📸 Capture Screenshot
+                File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+                String sanitizedStepName = stepName.replaceAll("[^a-zA-Z0-9]", "_");
+                String screenshotPath = screenshotDir + sanitizedStepName + "_" + System.currentTimeMillis() + ".png";
+
+                File dest = new File(screenshotPath);
+                Files.copy(src.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+
+                // ✅ Fix: Use relative path for Extent Reports
+                String relativeScreenshotPath = "./" + screenshotPath.replace(System.getProperty("user.dir"), "");
+
+                // 📄 Add Screenshot to Extent Report
+                test.addScreenCaptureFromPath(relativeScreenshotPath);
+                test.log(Status.INFO, "📸 Screenshot Captured: " + stepName);
+                System.out.println("📸 Screenshot Saved: " + dest.getAbsolutePath());
+            } catch (IOException e) {
+                System.out.println("❌ Screenshot Error: " + e.getMessage());
+            }
+        } else {
+            System.out.println("⚠️ WebDriver is NULL! Cannot take screenshot.");
         }
     }
 
-    private void openReport(String filePath) {
+    private void openReport() {
         try {
-            Desktop.getDesktop().browse(new File(filePath).toURI());
-            System.out.println("🌐 Report opened in browser: " + filePath);
+            File reportFile = new File(reportPath);
+            java.awt.Desktop.getDesktop().browse(reportFile.toURI());
+            System.out.println("🌍 Opening Report in Browser: " + reportPath);
         } catch (IOException e) {
-            logger.error("❌ Exception occurred: ", e);
+            e.printStackTrace();
+        }
+    }
+
+    public static void setDriver(WebDriver webDriver) {
+        driver = webDriver;
+    }
+
+    // Utility Method to Log Detailed Steps
+    public static void logStep(String stepDescription) {
+        if (test != null) {
+            test.log(Status.INFO, "📝 " + stepDescription);
+            System.out.println("📝 Step Logged: " + stepDescription);
+
+            // 📸 Capture Screenshot for Every Step
+            attachScreenshot(stepDescription.replaceAll("[^a-zA-Z0-9]", "_"));
         }
     }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Google Package">
+    <listeners>
+        <listener class-name="Listener.CustomListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Google Search Test">
+        <classes>
+            <class name="Google.GoogleSearch">
+                <methods>
+                    <include name="setDriver"/>
+                    <include name="OpenWebsite"/>
+                    <include name="PopUpFrame"/>
+                    <include name="WebSearch"/>
+                    <include name="reCAPTCHA"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

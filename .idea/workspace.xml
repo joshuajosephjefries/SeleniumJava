@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added CustomListener.java to Listener Package">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Created GoogleSearch for my profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Google/GoogleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Google/GoogleSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Listener/CustomListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Listener/CustomListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Listener/CustomListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Listener/CustomListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_181115.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_182507.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111137.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111538.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_112120.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testngAnnotations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngAnnotations.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor": "Run",
     "TestNG.GoogleSearch.executor": "Run",
     "TestNG.GoogleSearch.reCAPTCHA.executor": "Run",
     "git-widget-placeholder": "main",
@@ -63,21 +74,52 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.GoogleSearch">
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Listener" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml">
     <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyTestProject" />
+      <shortenClasspath name="ARGS_FILE" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testngAnnotations.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyTestProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <shortenClasspath name="ARGS_FILE" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngGoogle.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -101,11 +143,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" />
+      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml" />
+      <item itemvalue="TestNG.GoogleSearch" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoogleSearch" />
+        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" />
-        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml" />
+        <item itemvalue="TestNG.GoogleSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742748839448</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created GoogleSearch for my profile">
+      <option name="closed" value="true" />
+      <created>1742751114078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742751114078</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +198,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added annotations and made modification to listener" />
     <MESSAGE value="Added CustomListener.java to Listener Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CustomListener.java to Listener Package" />
+    <MESSAGE value="Created GoogleSearch for my profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created GoogleSearch for my profile" />
   </component>
 </project>

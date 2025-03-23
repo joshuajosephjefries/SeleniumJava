@@ -1,12 +1,13 @@
 package Google;
 
+import Listener.CustomListener;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
 
 public class GoogleSearch {
@@ -18,11 +19,17 @@ public class GoogleSearch {
         System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        CustomListener.setDriver(driver);
     }
     @Test(priority = 1)
     public void OpenWebsite(){
+        CustomListener.logStep("🔗 Navigating to Google");
         driver.get("https://www.google.com");
-        System.out.println("Title: " + driver.getTitle());
+        CustomListener.logStep("🧐 Checking Page Title");
+        String title = driver.getTitle();
+        System.out.println("Title: " + title);
+        assert title.contains("Google");
+        CustomListener.logStep("✅ Title Verified: " + title);
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         System.out.println("Page loaded Successfully");
     }
