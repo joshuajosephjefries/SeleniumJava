@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added the logstep in class file">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Edited README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Listener/CustomListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Listener/CustomListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_174205.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250319_174205.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_180057.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250319_180057.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_181115.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_182507.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_105300.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250320_105300.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_110534.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250320_110534.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111137.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111538.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_112120.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_114009.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250320_114009.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250323_221601.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250323_221601.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250323_222143.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250323_222143.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -52,24 +61,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor": "Run",
-    "TestNG.GoogleSearch.executor": "Run",
-    "TestNG.GoogleSearch.reCAPTCHA.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.preview.features.used": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GoogleSearch.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GoogleSearch.reCAPTCHA.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Listener" />
@@ -193,7 +202,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742795876017</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added details about the listener in README.md">
+      <option name="closed" value="true" />
+      <created>1742796493363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742796493364</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Edited README.md">
+      <option name="closed" value="true" />
+      <created>1742799451433</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742799451433</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +238,8 @@
     <MESSAGE value="Created GoogleSearch for my profile" />
     <MESSAGE value="Made modifications to CustomListener" />
     <MESSAGE value="Added the logstep in class file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the logstep in class file" />
+    <MESSAGE value="Added details about the listener in README.md" />
+    <MESSAGE value="Edited README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited README.md" />
   </component>
 </project>

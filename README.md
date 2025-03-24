@@ -26,11 +26,11 @@ I have used a custom TestNG listener that automatically opens the Extent Report 
 
 📂 SeleniumJava
 
-┣ 📂 src/test/java
+┣ 📂 src/main/java
 
-┃ ┣ 📜 CustomTestListener.java    # Custom TestNG Listener
+┃ 📂 src/main/java/Listener       # Custom TestNG Listener
 
-┃ ┣ 📜 SampleTest.java            # Sample Test Case
+┃ ┣ 📜 src/main/java/Google/GoogleSearch          # Sample Test Case
 
 ┣ 📂 reports                      # 📊 Generated Extent Reports
 

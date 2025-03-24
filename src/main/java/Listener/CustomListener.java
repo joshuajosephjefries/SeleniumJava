@@ -27,7 +27,7 @@ public class CustomListener implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        reportPath = System.getProperty("user.dir") + "/test-output/ExtentReport_" + timestamp + ".html";
+        reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + timestamp + ".html";
         screenshotDir = System.getProperty("user.dir") + "/screenshots/" + timestamp + "/";
 
         ExtentSparkReporter htmlReporter = new ExtentSparkReporter(reportPath);
