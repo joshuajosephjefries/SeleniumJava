@@ -1,13 +1,46 @@
-# SeleniumJava
-Practicing Frameworks
+# 🚀 Selenium Java - Test Automation Framework
 
-1. TESTNG
-I have used a custom listener that opens the extent report in chrome browser once the execution is completed.
-Features of the Custom Listener:
-   Used extent reports for reporting with ExtentSparkReporter
-   Reporting shows START, PASS, FAIL, & SKIPPED
-   Report opens in the browser upon reaching the end of execution
-   Screenshots are saved in /screenshots/ folder
-   Better Naming for Screenshot Files, that includes date and time
-   Detailed Step Execution in Console Output
-   Includes Step Logs in the Report
+### 📌 Practicing Frameworks with Selenium & TestNG
+
+### 1. TESTNG - Custom Listener Implementation
+
+I have used a custom TestNG listener that automatically opens the Extent Report in Chrome once execution is completed.
+
+#### 📌 Features of the Custom Listener
+
+ 📊 Used Extent Reports with ExtentSparkReporter
+
+ 🟢 Reporting Shows: START ⏳, PASS ✅, FAIL ❌, SKIPPED ⚠️
+
+ 🌐 Report Automatically Opens in Browser after test execution
+
+ 📸 Screenshots are Saved in /screenshots/ Folder
+
+ 🕒 Better Naming for Screenshot Files (Includes Date & Time)
+
+ 📝 Detailed Step Execution Logs in Console Output
+
+ 📜 Step Logs Are Included in the Extent Report
+
+## 📂 Directory Structure
+
+📂 SeleniumJava
+
+┣ 📂 src/test/java
+
+┃ ┣ 📜 CustomTestListener.java    # Custom TestNG Listener
+
+┃ ┣ 📜 SampleTest.java            # Sample Test Case
+
+┣ 📂 reports                      # 📊 Generated Extent Reports
+
+┣ 📂 screenshots                   # 📸 Captured Screenshots
+
+┗ 📜 pom.xml                       # Maven Dependencies
+
+## 🚀 How to Run the Tests
+
+### Clean and Run Tests
+<i> mvn clean test </i>
+
+ 📢 After execution, the Extent Report will open automatically in your default browser!
