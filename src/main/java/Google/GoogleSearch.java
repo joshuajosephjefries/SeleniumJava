@@ -38,7 +38,7 @@ public class GoogleSearch {
     public void PopUpFrame(){
         WebElement frame1 = driver.findElement(By.xpath("//iframe[@name='callout']"));
         driver.switchTo().frame(frame1);
-        System.out.println("Frame found. Proceeding with the next steps...");
+        CustomListener.logStep("🔗 Clicking Stay signed out");
         driver.findElement(By.xpath("//button[@aria-label='Stay signed out']")).click();
         driver.switchTo().defaultContent();
     }
@@ -47,6 +47,7 @@ public class GoogleSearch {
     public void WebSearch(){
         WebElement Searchbar = driver.findElement(By.xpath("//textarea[@title='Search']"));
         Searchbar.sendKeys("Joseph Jefries Github");
+        CustomListener.logStep("✅ Entered the data in the search bar");
         Searchbar.sendKeys(Keys.ENTER);
         System.out.println("Searching for the information..");
     }
@@ -54,11 +55,13 @@ public class GoogleSearch {
     @Test(priority = 4)
     public void reCAPTCHA() {
         if (isRecaptchaPresent()) {
+            CustomListener.logStep("⚠️ reCAPTCHA detected! Exiting test.");
             System.out.println("⚠️ reCAPTCHA detected! Exiting test.");
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         }
         else{
             WebElement Hyperlink = driver.findElement(By.xpath("//h3[normalize-space()='Joseph Jefries joshuajosephjefries']"));
+            CustomListener.logStep("✅ Found the hyperlink for the searched web");
             Actions actions = new Actions(driver);
             actions.contextClick(Hyperlink).perform();
         }
@@ -68,7 +71,8 @@ public class GoogleSearch {
         try {
             WebElement recaptcha = driver.findElement(By.cssSelector("iframe[title='reCAPTCHA']"));
             return recaptcha.isDisplayed();
-        } catch (NoSuchElementException e) {
+        }
+        catch (NoSuchElementException e) {
             return false;  // reCAPTCHA not found, continue execution
         }
     }
@@ -77,6 +81,7 @@ public class GoogleSearch {
     public void tearDown() {
         if (driver != null) {
             driver.quit();
+            System.out.println("Closing the browser");
         }
     }
 }
