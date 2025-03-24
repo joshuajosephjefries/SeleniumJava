@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Made modifications to CustomListener">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added the logstep in class file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Google/GoogleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Google/GoogleSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_181115.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_182507.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111137.html" beforeDir="false" />
@@ -185,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742759274481</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added the logstep in class file">
+      <option name="closed" value="true" />
+      <created>1742795876017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742795876017</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +212,7 @@
     <MESSAGE value="Added CustomListener.java to Listener Package" />
     <MESSAGE value="Created GoogleSearch for my profile" />
     <MESSAGE value="Made modifications to CustomListener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made modifications to CustomListener" />
+    <MESSAGE value="Added the logstep in class file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the logstep in class file" />
   </component>
 </project>
