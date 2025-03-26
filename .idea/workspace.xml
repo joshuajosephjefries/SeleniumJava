@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Edited README.md">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Moved the Extent Reports to &quot;reports&quot; folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Listener/CustomListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Listener/CustomListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_174205.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250319_174205.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_180057.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250319_180057.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_181115.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250319_182507.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_105300.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250320_105300.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_110534.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250320_110534.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111137.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_111538.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_112120.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250320_114009.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250320_114009.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250323_221601.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250323_221601.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport_20250323_222143.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/ExtentReport_20250323_222143.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,30 +47,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.GoogleSearch.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.GoogleSearch.reCAPTCHA.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor": "Run",
+    "TestNG.GmailTest.Logon.executor": "Run",
+    "TestNG.GmailTest.OpenGmail.executor": "Run",
+    "TestNG.GmailTest.executor": "Run",
+    "TestNG.GoogleSearch.executor": "Run",
+    "TestNG.GoogleSearch.reCAPTCHA.executor": "Run",
+    "TestNG.Record.executor": "Run",
+    "TestNG.TestWebsite.Hello.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.preview.features.used": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Listener" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml">
     <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <shortenClasspath name="ARGS_FILE" />
       <useClassPathOnly />
@@ -102,6 +95,16 @@
         <value defaultName="wholeProject" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyTestProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngGmail.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -131,17 +134,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyTestProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Google" />
-      <option name="MAIN_CLASS_NAME" value="Google.GoogleSearch" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Gmail" />
+      <option name="MAIN_CLASS_NAME" value="Gmail.GmailTest" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,15 +158,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" />
+      <item itemvalue="TestNG.GmailTest" />
       <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" />
       <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml" />
-      <item itemvalue="TestNG.GoogleSearch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" />
+        <item itemvalue="TestNG.GmailTest" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" />
-        <item itemvalue="TestNG.GoogleSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742799451433</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Moved the Extent Reports to &quot;reports&quot; folder">
+      <option name="closed" value="true" />
+      <created>1742799978945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742799978945</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +259,7 @@
     <MESSAGE value="Added the logstep in class file" />
     <MESSAGE value="Added details about the listener in README.md" />
     <MESSAGE value="Edited README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited README.md" />
+    <MESSAGE value="Moved the Extent Reports to &quot;reports&quot; folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved the Extent Reports to &quot;reports&quot; folder" />
   </component>
 </project>
