@@ -40,6 +40,8 @@ I have used a custom TestNG listener that automatically opens the Extent Report 
 
 ## 🚀 How to Run the Tests
 
+📢 Add the Drivers to C://Drivers dir location and change the location in the System.setProperty of Java class files
+
 ### Clean and Run Tests
 <i> mvn clean test </i>
 
