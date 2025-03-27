@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Created Gmail class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added WebDriverWait to GmailTest.java">
       <change beforePath="$PROJECT_DIR$/src/main/java/Gmail/GmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gmail/GmailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gmail/GmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gmail/GmailTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743018941274</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added WebDriverWait to GmailTest.java">
+      <option name="closed" value="true" />
+      <created>1743057544822</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743057544822</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,6 +252,7 @@
     <MESSAGE value="Edited README.md" />
     <MESSAGE value="Moved the Extent Reports to &quot;reports&quot; folder" />
     <MESSAGE value="Created Gmail class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Gmail class" />
+    <MESSAGE value="Added WebDriverWait to GmailTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added WebDriverWait to GmailTest.java" />
   </component>
 </project>
