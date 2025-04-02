@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added a note about drivers in README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gmail/GmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gmail/GmailTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/CustomListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/TestAnnotation1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/TestAnnotation2.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,62 +51,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.GmailTest.Logon.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.GmailTest.OpenGmail.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.GmailTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.GoogleSearch.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.GoogleSearch.reCAPTCHA.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LowertoUpperCase.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Record.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestWebsite.Hello.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.UppertoLowerCase.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor": "Run",
+    "TestNG.GmailTest.Logon.executor": "Run",
+    "TestNG.GmailTest.OpenGmail.executor": "Run",
+    "TestNG.GmailTest.executor": "Run",
+    "TestNG.GoogleSearch.executor": "Run",
+    "TestNG.GoogleSearch.reCAPTCHA.executor": "Run",
+    "TestNG.Login.executor": "Run",
+    "TestNG.LowertoUpperCase.executor": "Run",
+    "TestNG.Record.executor": "Run",
+    "TestNG.TestWebsite.Hello.executor": "Run",
+    "TestNG.UppertoLowerCase.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.preview.features.used": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Listener" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LowertoUpperCase">
-    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <shortenClasspath name="ARGS_FILE" />
-      <useClassPathOnly />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="22" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngAnnotations.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Login">
     <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyTestProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testngGmail.xml" />
@@ -131,6 +112,23 @@
         <value defaultName="wholeProject" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyTestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SalesForce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SalesForce" />
+      <option name="MAIN_CLASS_NAME" value="SalesForce.Login" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -166,19 +164,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.Login" />
       <item itemvalue="TestNG.LowertoUpperCase" />
       <item itemvalue="TestNG.UppertoLowerCase" />
       <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" />
-      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" />
       <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Login" />
         <item itemvalue="TestNG.LowertoUpperCase" />
         <item itemvalue="TestNG.UppertoLowerCase" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml" />
-        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml" />
       </list>
     </recent_temporary>
   </component>

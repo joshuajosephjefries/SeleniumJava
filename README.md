@@ -46,3 +46,5 @@ I have used a custom TestNG listener that automatically opens the Extent Report 
 <i> mvn clean test </i>
 
  📢 After execution, the Extent Report will open automatically in your default browser!
+
+📢 For SalesForce Login, enter your username and password in Credentials.java
