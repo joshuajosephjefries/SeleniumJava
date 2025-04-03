@@ -47,4 +47,11 @@ I have used a custom TestNG listener that automatically opens the Extent Report 
 
  📢 After execution, the Extent Report will open automatically in your default browser!
 
-📢 For SalesForce Login, enter your username and password in Credentials.java
+### Salesforce Config
+📢 Enter the SF username and password credentials in config.properties
+
+📂 SeleniumJava
+
+┣ 📂 src/test/resources
+
+┃ ┣ 📜 src/test/resources/config.properties    

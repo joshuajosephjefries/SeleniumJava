@@ -1,31 +1,28 @@
 package SalesForce;
 
 import Listener.CustomListener;
+import Utils.ConfigReader;
+import Utils.DriverSetup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import javax.swing.*;
-import java.awt.*;
 import java.time.Duration;
 
-public class Login {
+public class SFLogin {
+
     WebDriver driver;
+
     @BeforeTest
-    public void DriverSetup(){
-        System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver-win64\\chromedriver.exe");
-        this.driver = new ChromeDriver();
-        driver.manage().window().maximize();
+    public void setup() {
+        driver = DriverSetup.SetDriver(); // Get WebDriver from utility class
     }
 
     @Test
     public void LoginSF(){
+
         CustomListener.logStep("🔗 Navigating to Salesforce");
         driver.get("https://www.salesforce.com");
 
@@ -43,13 +40,13 @@ public class Login {
         CustomListener.logStep("🔗 Entering Username");
         WebElement UserName = driver.findElement(By.xpath("//div[@id='username_container']/input[@id='username']"));
         UserName.click();
-        UserName.sendKeys(Credentials.getUsername());
+        UserName.sendKeys(ConfigReader.getProperty("username"));
         System.out.println("Username entered securely!");
         CustomListener.logStep("✅ Entered Username");
 
         CustomListener.logStep("🔗 Entering SF Password");
         WebElement Password = driver.findElement(By.xpath("//input[@id='password']"));
-        Password.sendKeys(Credentials.getPassword());
+        Password.sendKeys(ConfigReader.getProperty("password"));
         System.out.println("Password entered securely!");
         CustomListener.logStep("✅ Entered SF password");
         Password.click();
