@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Created new Salesforce package">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Created utils and SF login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Salesforce_testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Salesforce_testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/Credentials.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/SFLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/SFLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/SFLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SalesForce/Credentials.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SalesForce/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngGmail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gmail_testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngGoogle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Google_testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SalesForce/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SalesForce/SFLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SalesForce/SFLogin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,23 +58,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DataProvider.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Gmail_testng.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Google_testng.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml (1).executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/testngAnnotations.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor": "Run",
+    "TestNG.CreateNewLead.executor": "Run",
     "TestNG.GmailTest.Logon.executor": "Run",
     "TestNG.GmailTest.OpenGmail.executor": "Run",
     "TestNG.GmailTest.executor": "Run",
+    "TestNG.Gmail_testng.xml.executor": "Run",
     "TestNG.GoogleSearch.executor": "Run",
     "TestNG.GoogleSearch.reCAPTCHA.executor": "Run",
     "TestNG.Login.executor": "Run",
     "TestNG.LowertoUpperCase.executor": "Run",
     "TestNG.Main.executor": "Run",
+    "TestNG.NavigateToSalesConsole.SalesConsole.executor": "Run",
     "TestNG.Record.executor": "Run",
     "TestNG.SFLogin.executor": "Run",
+    "TestNG.Salesforce_testng.xml.executor": "Run",
     "TestNG.TestWebsite.Hello.executor": "Run",
     "TestNG.UppertoLowerCase.executor": "Run",
     "git-widget-placeholder": "main",
@@ -82,7 +93,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -94,13 +106,13 @@
       <recent name="Listener" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml">
-    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Salesforce_testng.xml">
+    <configuration name="Gmail_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <shortenClasspath name="ARGS_FILE" />
       <useClassPathOnly />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="22" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Salesforce_testng.xml" />
+      <option name="SUITE_NAME" value="Gmail_testng.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -118,44 +130,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyTestProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngGmail.xml" />
+    <configuration name="Google_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <shortenClasspath name="ARGS_FILE" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="SUITE_NAME" value="Google_testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyTestProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SalesForce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SalesForce" />
-      <option name="MAIN_CLASS_NAME" value="SalesForce.Main" />
-      <option name="TEST_OBJECT" value="CLASS" />
+    <configuration name="Salesforce_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <shortenClasspath name="ARGS_FILE" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="SUITE_NAME" value="Salesforce_testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SFLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyTestProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SalesForce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SalesForce" />
-      <option name="MAIN_CLASS_NAME" value="SalesForce.SFLogin" />
-      <option name="TEST_OBJECT" value="CLASS" />
+    <configuration name="testngAnnotations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <shortenClasspath name="ARGS_FILE" />
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="SUITE_NAME" value="testngAnnotations.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -163,17 +200,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.Main" />
-      <item itemvalue="TestNG.SFLogin" />
-      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" />
-      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" />
+      <item itemvalue="TestNG.Gmail_testng.xml" />
+      <item itemvalue="TestNG.Google_testng.xml" />
+      <item itemvalue="TestNG.testngAnnotations.xml" />
+      <item itemvalue="TestNG.Salesforce_testng.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" />
-        <item itemvalue="TestNG.Main" />
-        <item itemvalue="TestNG.SFLogin" />
-        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml" />
+        <item itemvalue="TestNG.Salesforce_testng.xml" />
+        <item itemvalue="TestNG.Gmail_testng.xml" />
+        <item itemvalue="TestNG.Google_testng.xml" />
+        <item itemvalue="TestNG.testngAnnotations.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743606649091</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Created utils and SF login">
+      <option name="closed" value="true" />
+      <created>1743690012933</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743690012933</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +354,7 @@
     <MESSAGE value="Added WebDriverWait to GmailTest.java" />
     <MESSAGE value="Added a note about drivers in README.md" />
     <MESSAGE value="Created new Salesforce package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new Salesforce package" />
+    <MESSAGE value="Created utils and SF login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created utils and SF login" />
   </component>
 </project>
