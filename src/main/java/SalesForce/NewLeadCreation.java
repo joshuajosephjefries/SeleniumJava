@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 
 public class NewLeadCreation {
 
@@ -29,13 +30,17 @@ public class NewLeadCreation {
         CustomListener.logStep(("🔗 Navigating to Leads"));
         WebElement chevronButton = driver.findElement(By.xpath("//button[@title='Show Navigation Menu']/lightning-primitive-icon"));
         chevronButton.click();
-        WebElement LeadButton = driver.findElement(By.xpath("//span[@class='slds-media__body']/span[text()='Leads']"));
+        WebElement LeadButton = driver.findElement(By.xpath("//span[text()='Leads']"));
         LeadButton.click();
         CustomListener.logStep(("🔗 Navigated to Leads"));
+        CustomListener.logStep(("🔗 Closing Open Tabs"));
+        ToastMessagePopUp();
+        closeAllTabs();
+        CustomListener.logStep(("🔗 Closed Open Tabs"));
     }
 
     @Test(dataProvider="leadData")
-    public void NewLead(String Execute, String FirstName, String LastName, String Title, String Company, String Email, String Rating, String Source, String Country) throws InterruptedException {
+    public void NewLead(String Execute, String Status, String Salutation, String FirstName, String LastName, String Title, String Company, String Email, String Phone, String NoOfEmployees, String Rating, String Source, String Address, String Street, String City, String ZipPostalCode, String StateProvince, String Country) throws InterruptedException {
         if ("Yes".equalsIgnoreCase(Execute)) {
 
             // Navigate to Leads
@@ -46,26 +51,39 @@ public class NewLeadCreation {
             LeadButton.click();
 
             // Click New
-            CustomListener.logStep(("🔗 Creating New Leads"));
+            CustomListener.logStep(("🔗 Creating New Lead"));
             WebElement NewButton = driver.findElement(By.xpath("//button[text()='New']"));
             NewButton.click();
 
             // Filling the fields
             CustomListener.logStep(("🔗 Entering new lead information"));
+
+            // Field: Status
+            WebElement status_dropdown = driver.findElement(By.xpath("//button[@aria-label='Lead Status']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", status_dropdown);
+            status_dropdown.click();
+            WebElement status_option = driver.findElement(By.xpath("//lightning-base-combobox-item//span[text()='" + Status + "']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", status_option);
+            status_option.click();
+
+            // Field: Salutation
+            WebElement salutation_dropdown = driver.findElement(By.xpath("//button[@aria-label='Salutation']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", salutation_dropdown);
+            salutation_dropdown.click();
+            WebElement salutation_option = driver.findElement(By.xpath("//lightning-base-combobox-item//span[text()='" + Salutation + "']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", salutation_option);
+            salutation_option.click();
+
             driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys(FirstName);
             driver.findElement(By.xpath("//input[@name='lastName']")).sendKeys(LastName);
             driver.findElement(By.xpath("//input[@name='Title']")).sendKeys(Title);
             driver.findElement(By.xpath("//input[@name='Company']")).sendKeys(Company);
             driver.findElement(By.xpath("//input[@name='Email']")).sendKeys(Email);
+            driver.findElement(By.xpath("//input[@name='Phone']")).sendKeys(Phone);
+            driver.findElement(By.xpath("//input[@name='NumberOfEmployees']")).sendKeys(NoOfEmployees);
 
             CustomListener.logStep(("🔗 Entering more details..."));
 
-            WebElement rating_dropdown = driver.findElement(By.xpath("//button[@aria-label='Rating']"));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", rating_dropdown);
-            rating_dropdown.click();
-            WebElement rating_option = driver.findElement(By.xpath("//lightning-base-combobox-item//span[text()='" + Rating + "']"));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", rating_option);
-            rating_option.click();
 
             WebElement source_dropdown = driver.findElement(By.xpath("//button[@aria-label='Lead Source']"));
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", source_dropdown);
@@ -74,14 +92,29 @@ public class NewLeadCreation {
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", source_option);
             source_option.click();
 
+            WebElement rating_dropdown = driver.findElement(By.xpath("//button[@aria-label='Rating']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", rating_dropdown);
+            rating_dropdown.click();
+            WebElement rating_option = driver.findElement(By.xpath("//lightning-base-combobox-item//span[text()='" + Rating + "']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", rating_option);
+            rating_option.click();
+
+            driver.findElement(By.xpath("//input[@placeholder='Search Address']")).sendKeys(Address);
+            driver.findElement(By.xpath("//textarea[@name='street']")).sendKeys(Street);
+            driver.findElement(By.xpath("//input[@name='city']")).sendKeys(City);
+            driver.findElement(By.xpath("//input[@name='postalCode']")).sendKeys(ZipPostalCode);
+            driver.findElement(By.xpath("//input[@name='province']")).sendKeys(StateProvince);
             driver.findElement(By.xpath("//input[@name='country']")).sendKeys(Country);
+            CustomListener.logStep(("🔗 Entered all the details..."));
+
+            // If duplicate, refrain from creating the lead
+            Duplicate_Leads();
 
             // Submit
             CustomListener.logStep(("🔗 Submitting the lead"));
             driver.findElement(By.xpath("//button[@name='SaveEdit']")).click();
 
             CustomListener.logStep(("✅ Lead submitted successfully"));
-            Thread.sleep(2000); // optional: slight wait for UI response
         } else {
             CustomListener.logStep(("⚠️ Test Skipped"));
             throw new SkipException("Skipping test based on Execute column");
@@ -108,5 +141,61 @@ public class NewLeadCreation {
             }
         }
         return LeadData;
+    }
+
+    public void closeAllTabs() {
+        List<WebElement> closeButtons = null;
+        try {
+            closeButtons = driver.findElements(By.xpath("//ul[@role='presentation']/li[@data-aura-class='navexConsoleTabItem']/div[2]/button"));
+
+            for (WebElement closeBtn : closeButtons) {
+                try {
+                    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", closeBtn);
+                    closeBtn.click();
+                    new WebDriverWait(driver, Duration.ofSeconds(2)).until(ExpectedConditions.stalenessOf(closeBtn));
+                } catch (Exception e) {
+                    System.out.println("❌ Could not close one tab: " + e.getMessage());
+                }
+            }
+
+            System.out.println("✅ All open tabs closed.");
+        } catch (Exception e) {
+            System.out.println("❌ Error while closing tabs: " + e.getMessage());
+        }
+        System.out.println("✅ Closed " + closeButtons.size() + " open tabs.");
+    }
+
+    public void ToastMessagePopUp() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+            List<WebElement> toastMessages = driver.findElements(By.xpath("//div[@data-aura-class='forceToastMessage']"));
+
+            if (!toastMessages.isEmpty() && toastMessages.get(0).isDisplayed()) {
+                WebElement close_button = toastMessages.get(0).findElement(By.xpath("//div[@class='slds-notify__close']/button"));
+                close_button.click();
+                System.out.println("✅ Closed toast message");
+            }
+        } catch (Exception e) {
+            System.out.println("⚠️ No toast message found or couldn't close: " + e.getMessage());
+        }
+    }
+
+    public void Duplicate_Leads() {
+        try {
+            List<WebElement> duplicateWarnings = driver.findElements(By.xpath("//button[@id='window']/lightning-icon[@icon-name='utility:warning' or @title='Error']"));
+
+            if (!duplicateWarnings.isEmpty()) {
+                System.out.println("⚠️ Duplicate Lead detected. Lead creation not allowed.");
+                CustomListener.logStep("⚠️ Duplicate Lead Detected. Lead creation not allowed.");
+                WebElement cancel_button = driver.findElement(By.xpath("//lightning-button/button[@name='CancelEdit']"));
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+                cancel_button.click();
+                Assert.fail("❌ Duplicate lead detected. Lead creation is not allowed.");
+            } else {
+                System.out.println("✅ No duplicate leads. Proceeding to save.");
+            }
+        } catch (Exception e) {
+            System.out.println("❌ Error while checking duplicate lead: " + e.getMessage());
+        }
     }
 }
