@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added more features to New Lead">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Maintaining code by having common functions in Utils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/NewLeadCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/NewLeadCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SalesForce/NewLeadCreation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SalesForce/NewLeadCreation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744219014701</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Maintaining code by having common functions in Utils">
+      <option name="closed" value="true" />
+      <created>1744693107574</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1744693107574</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -343,6 +349,7 @@
     <MESSAGE value="Created code for new lead" />
     <MESSAGE value="Made changes to NewLeadCreation code" />
     <MESSAGE value="Added more features to New Lead" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more features to New Lead" />
+    <MESSAGE value="Maintaining code by having common functions in Utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maintaining code by having common functions in Utils" />
   </component>
 </project>
