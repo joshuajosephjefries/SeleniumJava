@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Made changes to NewLeadCreation code">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Added more features to New Lead">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/NewLeadCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/NewLeadCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/data/Lead_Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/Lead_Data.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SalesForce/NewLeadCreation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SalesForce/NewLeadCreation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,9 +74,12 @@
     "TestNG.LowertoUpperCase.executor": "Run",
     "TestNG.Main.executor": "Run",
     "TestNG.NavigateToSalesConsole.SalesConsole.executor": "Run",
+    "TestNG.NewAccountCreation.executor": "Run",
     "TestNG.Record.executor": "Run",
     "TestNG.SFLogin.executor": "Run",
     "TestNG.Salesforce_testng.xml.executor": "Run",
+    "TestNG.Test.OpenPage.executor": "Run",
+    "TestNG.Test.minnu.executor": "Run",
     "TestNG.TestWebsite.Hello.executor": "Run",
     "TestNG.UppertoLowerCase.executor": "Run",
     "git-widget-placeholder": "main",
@@ -100,7 +102,7 @@
       <recent name="Listener" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml">
+  <component name="RunManager" selected="TestNG.NewAccountCreation">
     <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <shortenClasspath name="ARGS_FILE" />
       <useClassPathOnly />
@@ -118,6 +120,23 @@
         <value defaultName="wholeProject" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewAccountCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyTestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SalesForce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SalesForce" />
+      <option name="MAIN_CLASS_NAME" value="SalesForce.NewAccountCreation" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -144,11 +163,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.NewAccountCreation" />
       <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" />
       <item itemvalue="TestNG.Salesforce_testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NewAccountCreation" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" />
         <item itemvalue="TestNG.Salesforce_testng.xml" />
       </list>
@@ -283,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744053768899</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added more features to New Lead">
+      <option name="closed" value="true" />
+      <created>1744219014701</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1744219014701</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,6 +342,7 @@
     <MESSAGE value="Created utils and SF login" />
     <MESSAGE value="Created code for new lead" />
     <MESSAGE value="Made changes to NewLeadCreation code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made changes to NewLeadCreation code" />
+    <MESSAGE value="Added more features to New Lead" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more features to New Lead" />
   </component>
 </project>
