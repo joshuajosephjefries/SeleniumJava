@@ -12,7 +12,12 @@ import java.util.List;
 
 public class CommonFunctions {
 
-    WebDriver driver;
+    private WebDriver driver;
+
+    // Constructor
+    public CommonFunctions(WebDriver driver) {
+        this.driver = driver;
+    }
 
     public void closeAllTabs() {
         List<WebElement> closeButtons = null;

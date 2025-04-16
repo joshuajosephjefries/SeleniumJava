@@ -1,14 +1,11 @@
 package SalesForce;
 
 import Listener.CustomListener;
-import Utils.DriverSetup;
+import Utils.BaseTest;
 import Utils.ExcelReader;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.SkipException;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import Utils.CommonFunctions;
@@ -17,14 +14,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
-public class NewLeadCreation {
-
-    WebDriver driver;
-
-    @BeforeTest
-    public void setup() {
-        driver = DriverSetup.SetDriver(); // Get WebDriver from utility class
-    }
+public class NewLeadCreation extends BaseTest {
 
     @Test
     public void LeadNavigation() {
@@ -40,8 +30,9 @@ public class NewLeadCreation {
         CustomListener.logStep(("🔗 Closed Open Tabs"));
     }
 
-    @Test(dataProvider="leadData")
+    @Test(dataProvider = "leadData")
     public void NewLead(String Execute, String Status, String Salutation, String FirstName, String LastName, String Title, String Company, String Email, String Phone, String NoOfEmployees, String Rating, String Source, String Address, String Street, String City, String ZipPostalCode, String StateProvince, String Country) throws InterruptedException {
+
         if ("Yes".equalsIgnoreCase(Execute)) {
 
             // Navigate to Leads
@@ -51,11 +42,10 @@ public class NewLeadCreation {
             WebElement LeadButton = driver.findElement(By.xpath("//span[@class='slds-media__body']/span[text()='Leads']"));
             LeadButton.click();
 
-            // Click New
+            // Click New to create new Lead
             CustomListener.logStep(("🔗 Creating New Lead"));
             WebElement NewButton = driver.findElement(By.xpath("//button[text()='New']"));
             NewButton.click();
-
             // Filling the fields
             CustomListener.logStep(("🔗 Entering new lead information"));
 
@@ -84,7 +74,6 @@ public class NewLeadCreation {
             driver.findElement(By.xpath("//input[@name='NumberOfEmployees']")).sendKeys(NoOfEmployees);
 
             CustomListener.logStep(("🔗 Entering more details..."));
-
 
             WebElement source_dropdown = driver.findElement(By.xpath("//button[@aria-label='Lead Source']"));
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", source_dropdown);
@@ -122,9 +111,8 @@ public class NewLeadCreation {
         }
     }
 
-
     @DataProvider(name = "leadData")
-    public String [][] getData() throws IOException {
+    public String[][] getData() throws IOException {
         String path = "C:\\Users\\josep\\IdeaProjects\\SeleniumJava\\SeleniumJava\\src\\test\\data\\Lead_Data.xlsx";
 
         ExcelReader exceldata = new ExcelReader(path);
@@ -134,11 +122,10 @@ public class NewLeadCreation {
 
         String LeadData[][] = new String[totalrows][totalcols];
 
-        for(int i = 1; i<=totalrows; i++)
-        {
-            for(int j= 0; j<totalcols; j++)
-            {
-                LeadData[i-1][j]= exceldata.getCellData("Sheet1", i, j);
+        for (int i = 1; i <= totalrows; i++) {
+            for (int j = 0; j < totalcols; j++) {
+                String cellValue = exceldata.getCellData("Sheet1", i, j);
+                LeadData[i - 1][j] = (cellValue == null || cellValue.trim().isEmpty()) ? null : cellValue;
             }
         }
         return LeadData;
@@ -146,14 +133,14 @@ public class NewLeadCreation {
 
     //Close all tabs, if open
     public void closeAllTabs() {
-        CommonFunctions closetabs = new CommonFunctions();
+        CommonFunctions closetabs = new CommonFunctions(driver);
         closetabs.closeAllTabs();
     }
 
     //Toast Message for Duplicate Lead
     public void ToastMessagePopUp() {
-       CommonFunctions toasthandler = new CommonFunctions();
-       toasthandler.ToastMessagePopUp();
+        CommonFunctions toasthandler = new CommonFunctions(driver);
+        toasthandler.ToastMessagePopUp();
     }
 
     public void Duplicate_Leads() {

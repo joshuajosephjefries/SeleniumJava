@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Maintaining code by having common functions in Utils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Salesforce_testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Salesforce_NewLead.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/NavigateToSalesConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/NavigateToSalesConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/NewLeadCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/NewLeadCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/SFLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/SFLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/CommonFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/CommonFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/data/Lead_Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/Lead_Data.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Gmail_testng.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Google_testng.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewAccount.xml.executor": "Run",
+    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml (1).executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml.executor": "Run",
     "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/testngAnnotations.xml.executor": "Run",
@@ -72,9 +80,12 @@
     "TestNG.LowertoUpperCase.executor": "Run",
     "TestNG.Main.executor": "Run",
     "TestNG.NavigateToSalesConsole.SalesConsole.executor": "Run",
+    "TestNG.NewAccountCreation.NewAccountCreation.executor": "Run",
     "TestNG.NewAccountCreation.executor": "Run",
     "TestNG.Record.executor": "Run",
     "TestNG.SFLogin.executor": "Run",
+    "TestNG.Salesforce_NewAccount.xml.executor": "Run",
+    "TestNG.Salesforce_NewLead.xml.executor": "Run",
     "TestNG.Salesforce_testng.xml.executor": "Run",
     "TestNG.Test.OpenPage.executor": "Run",
     "TestNG.Test.minnu.executor": "Run",
@@ -100,13 +111,23 @@
       <recent name="Listener" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NewAccountCreation">
-    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml">
+    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyTestProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Salesforce_NewLead.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Gmail_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <shortenClasspath name="ARGS_FILE" />
       <useClassPathOnly />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="22" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/Salesforce_testng.xml" />
+      <option name="SUITE_NAME" value="Gmail_testng.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -124,28 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewAccountCreation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyTestProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SalesForce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SalesForce" />
-      <option name="MAIN_CLASS_NAME" value="SalesForce.NewAccountCreation" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Salesforce_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyTestProject" />
-      <shortenClasspath name="NONE" />
+    <configuration name="Salesforce_NewAccount.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <shortenClasspath name="ARGS_FILE" />
       <useClassPathOnly />
-      <option name="SUITE_NAME" value="Salesforce_testng.xml" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="SUITE_NAME" value="Salesforce_NewAccount.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -153,6 +158,9 @@
       <option name="TEST_OBJECT" value="SUITE" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
@@ -161,15 +169,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.NewAccountCreation" />
-      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" />
-      <item itemvalue="TestNG.Salesforce_testng.xml" />
+      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml" />
+      <item itemvalue="TestNG.Salesforce_NewAccount.xml" />
+      <item itemvalue="TestNG.Gmail_testng.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.NewAccountCreation" />
-        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml" />
-        <item itemvalue="TestNG.Salesforce_testng.xml" />
+        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml" />
+        <item itemvalue="TestNG.Salesforce_NewAccount.xml" />
+        <item itemvalue="TestNG.Gmail_testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744693107574</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Maintaining code by having common functions in Utils">
+      <option name="closed" value="true" />
+      <created>1744697552820</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1744697552820</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

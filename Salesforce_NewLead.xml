@@ -4,23 +4,20 @@
     <listeners>
         <listener class-name="Listener.CustomListener"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="SalesForce Testing">
+    <test verbose="2" preserve-order="true" name="SalesForce New Lead Testing">
         <classes>
             <class name="SalesForce.SFLogin">
                 <methods>
-                    <include name="setup"/>
                     <include name="LoginSF"/>
                 </methods>
             </class>
             <class name="SalesForce.NavigateToSalesConsole">
                 <methods>
-                    <include name="setup"/>
                     <include name="SalesConsole"/>
                 </methods>
             </class>
             <class name="SalesForce.NewLeadCreation">
                 <methods>
-                    <include name="setup"/>
                     <include name="LeadNavigation"/>
                     <include name="NewLead"/>
                 </methods>

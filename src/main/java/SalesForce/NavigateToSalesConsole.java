@@ -1,22 +1,13 @@
 package SalesForce;
 
 import Listener.CustomListener;
-import Utils.DriverSetup;
+import Utils.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.AssertJUnit;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class NavigateToSalesConsole {
-
-    WebDriver driver;
-
-    @BeforeTest
-    public void setup() {
-        driver = DriverSetup.SetDriver(); // Get WebDriver from utility class
-    }
+public class NavigateToSalesConsole extends BaseTest {
 
     @Test
     public void SalesConsole(){
