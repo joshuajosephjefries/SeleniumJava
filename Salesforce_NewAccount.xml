@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <listeners>-->
+<!--        <listener class-name="Listener.CustomListener"/>-->
+<!--    </listeners>-->
+    <test verbose="2" preserve-order="true" name="SalesForce New Account Testing">
+    <classes>
+        <class name="SalesForce.SFLogin">
+            <methods>
+                <include name="LoginSF"/>
+            </methods>
+        </class>
+        <class name="SalesForce.NavigateToSalesConsole">
+            <methods>
+                <include name="SalesConsole"/>
+            </methods>
+        </class>
+        <class name="SalesForce.NewAccountCreation">
+            <methods>
+                <include name="NewAccountNavigation"/>
+                <include name="NewAccount"/>
+            </methods>
+        </class>
+
+    </classes>
+    </test>
+</suite>

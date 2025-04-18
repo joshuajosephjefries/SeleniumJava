@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Maintaining code by having common functions in Utils">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Adding test data for Accounts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Salesforce_testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Salesforce_NewLead.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/NavigateToSalesConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/NavigateToSalesConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/NewLeadCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/NewLeadCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SalesForce/SFLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SalesForce/SFLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/CommonFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/CommonFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/data/Lead_Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data/Lead_Data.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,55 +47,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DataProvider.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Gmail_testng.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Google_testng.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewAccount.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml (1).executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/testngAnnotations.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml.executor": "Run",
-    "TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor": "Run",
-    "TestNG.CreateNewLead.executor": "Run",
-    "TestNG.GmailTest.Logon.executor": "Run",
-    "TestNG.GmailTest.OpenGmail.executor": "Run",
-    "TestNG.GmailTest.executor": "Run",
-    "TestNG.Gmail_testng.xml.executor": "Run",
-    "TestNG.GoogleSearch.executor": "Run",
-    "TestNG.GoogleSearch.reCAPTCHA.executor": "Run",
-    "TestNG.Login.executor": "Run",
-    "TestNG.LowertoUpperCase.executor": "Run",
-    "TestNG.Main.executor": "Run",
-    "TestNG.NavigateToSalesConsole.SalesConsole.executor": "Run",
-    "TestNG.NewAccountCreation.NewAccountCreation.executor": "Run",
-    "TestNG.NewAccountCreation.executor": "Run",
-    "TestNG.Record.executor": "Run",
-    "TestNG.SFLogin.executor": "Run",
-    "TestNG.Salesforce_NewAccount.xml.executor": "Run",
-    "TestNG.Salesforce_NewLead.xml.executor": "Run",
-    "TestNG.Salesforce_testng.xml.executor": "Run",
-    "TestNG.Test.OpenPage.executor": "Run",
-    "TestNG.Test.minnu.executor": "Run",
-    "TestNG.TestWebsite.Hello.executor": "Run",
-    "TestNG.UppertoLowerCase.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.preview.features.used": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DataProvider.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Gmail_testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Google_testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewAccount.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/testngAnnotations.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngAnnotations.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGmail.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/testngGoogle.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewLead.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GmailTest.Logon.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GmailTest.OpenGmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GmailTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Gmail_testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GoogleSearch.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GoogleSearch.reCAPTCHA.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Login.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LowertoUpperCase.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Main.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NavigateToSalesConsole.SalesConsole.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewAccountCreation.NewAccountCreation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewAccountCreation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Record.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SFLogin.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Salesforce_NewAccount.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Salesforce_NewLead.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Salesforce_testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Test.OpenPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Test.minnu.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestWebsite.Hello.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UppertoLowerCase.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\josep\IdeaProjects\SeleniumJava\SeleniumJava\src\test\resources" />
@@ -111,7 +105,17 @@
       <recent name="Listener" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewAccount.xml">
+    <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewAccount.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyTestProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Salesforce_NewAccount.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyTestProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Salesforce_NewLead.xml" />
@@ -145,38 +149,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Salesforce_NewAccount.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <shortenClasspath name="ARGS_FILE" />
-      <useClassPathOnly />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="22" />
-      <option name="SUITE_NAME" value="Salesforce_NewAccount.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml" />
-      <item itemvalue="TestNG.Salesforce_NewAccount.xml" />
+      <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewAccount.xml" />
       <item itemvalue="TestNG.Gmail_testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewAccount.xml" />
         <item itemvalue="TestNG.C:/Users/josep/IdeaProjects/SeleniumJava/SeleniumJava/Salesforce_NewLead.xml" />
-        <item itemvalue="TestNG.Salesforce_NewAccount.xml" />
         <item itemvalue="TestNG.Gmail_testng.xml" />
       </list>
     </recent_temporary>
@@ -334,7 +315,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744697552820</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Created BaseTest.java for driver">
+      <option name="closed" value="true" />
+      <created>1744806003162</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1744806003162</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Adding test data for Accounts">
+      <option name="closed" value="true" />
+      <created>1744912975467</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1744912975467</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,6 +363,18 @@
     <MESSAGE value="Made changes to NewLeadCreation code" />
     <MESSAGE value="Added more features to New Lead" />
     <MESSAGE value="Maintaining code by having common functions in Utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maintaining code by having common functions in Utils" />
+    <MESSAGE value="Created BaseTest.java for driver" />
+    <MESSAGE value="Adding test data for Accounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding test data for Accounts" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.InterruptedException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
