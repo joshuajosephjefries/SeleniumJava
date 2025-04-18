@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Adding test data for Accounts">
+    <list default="true" id="0f32b85e-2dae-41cb-b2c4-0a55b9e65b9c" name="Changes" comment="Code for new Accounts implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -331,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744912975467</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Code for new Accounts implementation">
+      <option name="closed" value="true" />
+      <created>1744975201064</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1744975201064</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,7 +373,8 @@
     <MESSAGE value="Maintaining code by having common functions in Utils" />
     <MESSAGE value="Created BaseTest.java for driver" />
     <MESSAGE value="Adding test data for Accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding test data for Accounts" />
+    <MESSAGE value="Code for new Accounts implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code for new Accounts implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
